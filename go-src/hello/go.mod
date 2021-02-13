@@ -1,4 +1,4 @@
-module github.com/AlexMercedCoder/netlify-lambda-go-functions
+module github.com/AlexMercedCoder/netlify-lambda-go-functions/hello
 
 go 1.15
 
