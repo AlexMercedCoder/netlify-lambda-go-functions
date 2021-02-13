@@ -11,7 +11,7 @@
     publish = "public"
 
     # command = the build command to run from the base directory
-    # command = "npm run build"
+    command = "make build"
 
     #functions = folder where your netlify functions are located
     functions = "funcs"
