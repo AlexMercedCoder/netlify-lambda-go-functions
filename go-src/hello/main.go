@@ -9,7 +9,12 @@ import (
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	return &events.APIGatewayProxyResponse{
 		StatusCode:        200,
-		Headers:           map[string]string{"Content-Type": "text/plain"},
+		Headers:           map[string]string{
+			"Content-Type": "text/plain",
+			"Access-Control-Allow-Origin": "https://mercedjsfuncs.netlify.app",
+			"Access-Control-Allow-Methods":"*",
+			"Access-Control-Allow-Headers":"*",
+		},
 		MultiValueHeaders: http.Header{"Set-Cookie": {"Ding", "Ping"}},
 		Body:              "Hello, World!",
 		IsBase64Encoded:   false,
